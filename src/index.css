@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Manrope", sans-serif;
+}
+
+.message {
+    @apply max-w-[80%] rounded-lg py-2 px-3 my-[8px] mx-[2px];
+}
+
+.sent {
+    @apply self-end bg-blue-500 text-white rounded-tr-none dark:bg-[#007bff];
+}
+
+.received {
+    @apply self-start bg-gray-200 text-gray-800 rounded-tl-none dark:bg-[#333] dark:text-white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    @apply bg-gray-200 dark:bg-gray-800 text-black dark:text-gray-200 p-3 rounded-lg text-sm;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    @apply text-gray-800 dark:text-gray-300;
+}
+
